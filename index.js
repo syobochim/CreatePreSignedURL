@@ -27,5 +27,5 @@ exports.handler = async (event) => {
     const downloadUrl = s3.getSignedUrl('getObject', params)
     console.log('The url is ', downloadUrl)
     
-    return downloadUrl
+    return "download url is  " + downloadUrl + " "
 };
